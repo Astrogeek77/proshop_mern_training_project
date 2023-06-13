@@ -71,6 +71,66 @@ const products = [
     rating: 0,
     numReviews: 0,
   },
+  {
+    name: 'MacBook Pro',
+    description:
+      'MacBook Pro 2021 with mini-LED display may launch between September, November',
+    price: 1749,
+    rating: 4.57,
+    countInStock: 83,
+    brand: 'Apple',
+    category: 'laptops',
+    image: 'https://i.dummyjson.com/data/products/6/1.png',
+    numReviews: 0,
+  },
+  {
+    name: 'Huawei P30',
+    description:
+      'Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.',
+    price: 499,
+    rating: 4.09,
+    countInStock: 32,
+    brand: 'Huawei',
+    category: 'smartphones',
+    image: 'https://i.dummyjson.com/data/products/5/1.jpg',
+    numReviews: 0,
+  },
+  {
+    name: 'Samsung Galaxy Book',
+    description:
+      'Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched',
+    price: 1499,
+    rating: 4.25,
+    countInStock: 50,
+    brand: 'Samsung',
+    category: 'laptops',
+    image: 'https://i.dummyjson.com/data/products/7/1.jpg',
+    numReviews: 0,
+  },
+
+  {
+    name: 'Microsoft Surface Laptop 4',
+    description:
+      'Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.',
+    price: 1499,
+    rating: 4.43,
+    countInStock: 68,
+    brand: 'Microsoft Surface',
+    category: 'laptops',
+    image: 'https://i.dummyjson.com/data/products/8/1.jpg',
+    numReviews: 0,
+  },
+  {
+    name: 'Infinix INBOOK',
+    description:
+      'Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty',
+    price: 1099,
+    rating: 4.54,
+    countInStock: 96,
+    brand: 'Infinix',
+    category: 'laptops',
+    image: 'https://i.dummyjson.com/data/products/9/1.jpg',
+  },
 ]
 
 export default products
