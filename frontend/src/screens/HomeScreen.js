@@ -10,6 +10,8 @@ import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
 import { listProducts } from '../actions/productActions'
 
+import Categories from '../components/Categories'
+
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword
 
@@ -26,24 +28,20 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
+      <h2 className="mt-4">Product Categories</h2>
+      <Categories />
       <Meta />
-      {!keyword ? (
-        <ProductCarousel />
-      ) : (
-        <Link to='/home' className='btn btn-light'>
-          Go Back
-        </Link>
-      )}
-      <h1>Latest Products</h1>
+
+      <h2 className="mt-4 mb-0">Latest Products</h2>
       {loading ? (
         <Loader />
       ) : error ? (
-        <Message variant='danger'>{error}</Message>
+        <Message variant="danger">{error}</Message>
       ) : (
         <>
           <Row>
             {products.map((product) => (
-              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+              <Col key={product._id} sm={12} md={6} lg={4} xl={4}>
                 <Product product={product} />
               </Col>
             ))}
@@ -54,6 +52,14 @@ const HomeScreen = ({ match }) => {
             keyword={keyword ? keyword : ''}
           />
         </>
+      )}
+      <h2 className="mt-4">Top Rated Products</h2>
+      {!keyword ? (
+        <ProductCarousel />
+      ) : (
+        <Link to="/home" className="btn btn-light">
+          Go Back
+        </Link>
       )}
     </>
   )
